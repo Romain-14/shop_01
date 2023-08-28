@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOP</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="/">home</a>
-            <a href="/shop">shop</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Produits en ce moment</h2>
-            <% for(const data of datas) {%>
-                <article>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>SHOP</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="/">home</a>
+                <a href="/shop">shop</a>
+            </nav>
+        </header>
+        <main>
+            <div class="ban"></div>
+            <section class="wrapper_card_product">
+                <h2>Tous nos produits</h2>
+                <% for(const data of datas) {%>
+                <article class="card_product">
                     <h3><%= data.label %></h3>
-                    <img src="/img/<%= data.url_img %>" alt="">
+                    <img src="/img/<%= data.url_img %>" alt="" />
                 </article>
-            <% } %>
-        </section>
-
-    </main>
-</body>
+                <% } %>
+            </section>
+        </main>
+    </body>
 </html>

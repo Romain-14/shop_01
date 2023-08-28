@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #333;
+    font-size: 1.6rem;
+}
+
+a {
+    color: #333;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+h2,
+h3 {
+    margin: 10px;
+    text-align: center;
+}
+
+/* HEADER */
+
+header {
+    padding: 20px;
+}
+
+header a {
+    text-transform: uppercase;
+    padding: 8px 4px;
+    margin: 8px;
+}
+
+.ban {
+    height: 120px;
+    background: url(./img/ban.avif) no-repeat center;
+    background-size: cover;
+}
+
+/* MAIN */
+
+.wrapper_card_product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+}
+
+.wrapper_card_product h2 {
+    width: 100%;
+}
+
+.card_product {
+    margin: 20px auto;
+    padding: 10px;
+    width: 30%;
+    border: 1px solid #D9DFFF;
+    border-radius: 10px;
+}
+
